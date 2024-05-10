@@ -15,13 +15,6 @@ onMounted(() => {
 
 <template>
   <NuxtLayout>
-    <UButton
-      :onclick="() => console.log('Hello world')"
-      size="lg"
-      icon="i-heroicons-face-smile"
-      color="lime"
-      variant="solid"
-      >Button</UButton
-    >
+    <NuxtPage />
   </NuxtLayout>
 </template>

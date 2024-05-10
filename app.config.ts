@@ -1,6 +1,15 @@
 export default defineAppConfig({
   ui: {
-    primary: "#84CC16",
-    gray: "#2A2B2A",
+    primary: "green",
+    gray: "cool",
+    strategy: "override",
+    button: {
+      color: {
+        highlight: {
+          solid:
+            "bg-theme-highlight text-white transition hover:bg-theme-highlight/80",
+        },
+      },
+    },
   },
 });

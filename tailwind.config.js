@@ -10,13 +10,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: {
-          100: "#84CC16",
-        },
-        secondary: {
-          100: "#2A2B2A",
+        theme: {
+          dark: {
+            100: "#18181B",
+            200: "#09090B",
+          },
+          highlight: "#D81E5B",
         },
       },
     },
   },
+  plugins: [require("tailwindcss-animated", "prettier-plugin-tailwindcss")],
 };
