@@ -1,6 +1,4 @@
 <script setup>
-import { createClient } from "@supabase/supabase-js";
-
 const supabase = useSupabaseClient();
 
 const countries = ref([]);
@@ -16,7 +14,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <ul>
-    <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
-  </ul>
+  <NuxtLayout>
+    <UButton
+      :onclick="() => console.log('Hello world')"
+      size="lg"
+      icon="i-heroicons-face-smile"
+      color="lime"
+      variant="solid"
+      >Button</UButton
+    >
+  </NuxtLayout>
 </template>

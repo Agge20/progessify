@@ -3,9 +3,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     "@nuxt/eslint",
-    "@nuxtjs/tailwindcss",
-    "nuxt-icon",
     "@nuxtjs/supabase",
+    "radix-vue/nuxt",
+    "@nuxt/ui",
   ],
   supabase: {
     redirect: false,
